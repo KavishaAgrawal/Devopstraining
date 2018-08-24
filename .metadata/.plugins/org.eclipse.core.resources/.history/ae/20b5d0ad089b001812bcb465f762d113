@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+import java.util.List;
+
+import com.beans.Book;
+
+public class DemoBookArrayList {
+ public static void main(String[] args) {
+	List<Book> books = new ArrayList<>();
+	books.add(new Book());
+	books.add(new Book(123,"Adv Java","Oracle",1234d));
+	books.add(new Book(300,"Adv Java","Oracle",3000d));
+	books.add(new Book(123,"Adv Java","Oracle",1234d));
+	System.out.println("no. of books="+books.size());
+	System.out.println(books);
+	Book book_to_search=new Book(300,"Adv Java","Oracle",3000d);
+	boolean removed=books.remove(book_to_search);
+	System.out.println("removed:"+removed);
+	boolean found=books.contains(book_to_search);
+	if (found) {
+		System.out.println("Book Availabale");
+	}
+	else {
+		System.out.println("Sorry we dont have book");
+	}
+}
+}

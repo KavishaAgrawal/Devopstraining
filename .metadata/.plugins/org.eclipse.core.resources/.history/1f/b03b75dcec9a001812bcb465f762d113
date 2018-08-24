@@ -1,0 +1,42 @@
+package com.functions;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.Scanner;
+
+import com.beans.Book;
+import com.interfaces.BookIO;
+
+public class BookClassIO implements BookIO{
+	@Override
+	public Book getBook() {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter book id:");
+		int isbn = sc.nextInt();
+		System.out.println("enter name of book:");
+		String name = sc.next();
+		System.out.println("enter publication name:");
+		String publication = sc.next();
+		System.out.println("enter price of  book");
+		double price = sc.nextDouble();
+		sc.close();
+		return new Book(isbn,name,publication,price);
+	}
+	@Override
+	public void printBook(List<Book> books) {
+		// TODO Auto-generated method stub
+		System.out.println("book details you entered:");
+		Iterator<Book> it = books.iterator();
+		while(it.hasNext()) {
+			//Book data=it.next();
+			System.out.println(it.next());
+	}
+	@Override
+	public void printBook(Book book) {
+		// TODO Auto-generated method stub
+		System.out.println(book);
+	}
+
+
+}

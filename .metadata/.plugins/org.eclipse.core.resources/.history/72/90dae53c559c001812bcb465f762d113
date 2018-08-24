@@ -1,0 +1,8 @@
+
+public class TestMyThrread {
+  public static void main(String[] args) {
+	System.out.println("Main started");
+	  Thread t = new MyThread();
+	t.start();
+}
+}

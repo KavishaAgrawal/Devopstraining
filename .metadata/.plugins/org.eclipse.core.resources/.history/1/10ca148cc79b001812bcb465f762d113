@@ -1,0 +1,23 @@
+package demo.exception;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class GeoCache {
+	public static void main(String[] args) {
+		
+	}
+	public static void before() {
+	       Set set = new TreeSet<>();
+	       set.add("2");
+	       set.add(3);
+	       set.add("1");
+	       Iterator<Set> it = set.iterator();
+	       while (it.hasNext())
+	               System.out.print(it.next() + " ");
+	}
+  }

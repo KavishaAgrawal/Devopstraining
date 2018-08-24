@@ -1,0 +1,16 @@
+package com.demo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class DemoArrayList {
+ public static void main(String[] args) {
+	List<String> l = new ArrayList<>();
+	l.add("ABC");
+	l.add("QWE");
+	l.add("poi");
+	l.add("ABC");
+	System.out.println(l);
+	l.forEach(System.out::println);
+}
+}

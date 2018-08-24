@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestEmployeeDAO1" project="JDBC Demo" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="TestEmployeeDAO1" time="1.388" uniqueid="[engine:junit-jupiter]/[class:TestEmployeeDAO1]">
+    <testcase name="testAddEmployee" classname="TestEmployeeDAO1" time="1.301" displayname="testAddEmployee()" uniqueid="[engine:junit-jupiter]/[class:TestEmployeeDAO1]/[method:testAddEmployee()]"/>
+    <testcase name="testAddEmployee_Negative" classname="TestEmployeeDAO1" time="0.087" displayname="testAddEmployee_Negative()" uniqueid="[engine:junit-jupiter]/[class:TestEmployeeDAO1]/[method:testAddEmployee_Negative()]"/>
+  </testsuite>
+</testrun>

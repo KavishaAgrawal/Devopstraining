@@ -1,0 +1,26 @@
+
+public class Person {
+  private int age;
+  private String name;
+  
+  //access_sp return_type fun name(){}
+  public void display( ) {
+     System.out.println("name:-"+name+"\t"+"age:-"+age);
+  }
+  
+  public Person()
+  {
+	  age = 10;
+	  name="Kavisha";
+  }
+  
+  public Person(int a, String n) {
+	// TODO Auto-generated constructor stub
+
+	  age = a;
+	  name = n;
+  }
+  public void setAge (int a) {
+	  age =a;
+  }
+}

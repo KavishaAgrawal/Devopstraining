@@ -1,0 +1,9 @@
+
+public class TestMyThrread {
+  public static void main(String[] args) {
+	System.out.println("Main started"+Thread.currentThread().getName());
+	  Thread t = new MyThread();
+	t.start();
+	System.out.println("Main completed"+Thread.currentThread().getName());
+}
+}

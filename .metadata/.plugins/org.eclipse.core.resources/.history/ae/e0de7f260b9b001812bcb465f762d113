@@ -1,0 +1,15 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class DemoHasMAp {
+ public static void main(String[] args) {
+	Map<String, String> m = new HashMap<>();
+	m.put("Citi", "Pune");
+	m.put("Wipro", "Hinjewadi");
+	m.put("Accenture", "Malad");
+	System.out.println(m);
+	m.put("Wipro", "Hyderabad");
+	System.out.println("after duplicate key");
+	System.out.println(m);
+}
+}

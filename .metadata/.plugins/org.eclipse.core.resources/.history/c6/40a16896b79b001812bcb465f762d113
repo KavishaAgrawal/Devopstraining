@@ -1,0 +1,11 @@
+package com.demo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class filterbook {
+  public static void main(String[] args) {
+	List<Book> books = new ArrayList<>();
+	System.out.println(books);
+}
+}

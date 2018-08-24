@@ -1,0 +1,15 @@
+
+public class TestPerson {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        //cls_name ref_name;
+		Person p;
+		//ref_name=new Cls_name();
+		p=new Person();
+		//ref name.name_of_function();
+		p.display();
+		
+	}
+
+}

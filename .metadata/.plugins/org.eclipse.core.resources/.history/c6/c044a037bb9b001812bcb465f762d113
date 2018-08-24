@@ -1,0 +1,14 @@
+package com.demo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class filterbook {
+  public static void main(String[] args) {
+	List<Book> books = new ArrayList<>();
+	books.add(new Book(1, "name1", "publication1", "price1"));
+	books.add(new Book(2, "name1", "publication2", "price2"));
+	
+	System.out.println(books);
+}
+}

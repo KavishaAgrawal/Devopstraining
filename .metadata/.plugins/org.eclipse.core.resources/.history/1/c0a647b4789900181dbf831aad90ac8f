@@ -1,0 +1,9 @@
+
+public class DemoString {
+   public static void main(String[] args) {
+	String name = "citi";
+	System.out.println("initial value of name:"+name);
+	name.concat(",Pune");
+	System.out.println("value of name after concatation:"+name);
+}
+}

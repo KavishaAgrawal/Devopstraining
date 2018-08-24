@@ -1,0 +1,42 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class DemoArrayList {
+  public static void main(String[] args) {
+	List l = new ArrayList();
+	l.add("ABC");
+	l.add("XYZ");
+	l.add("C");
+	l.add("LMN");
+	l.add("ABC");
+	System.out.println(l);
+	int size = l.size();
+	System.out.println("size is:"+size);
+	l.add(2, "New Data");
+	System.out.println(l);
+	//l.remove(3);
+	//System.out.println(l);
+	boolean found = 1.contains("New Data");
+	if(found) {
+		System.out.println("available");
+	}else {
+		System.out.println("Not available");
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+}

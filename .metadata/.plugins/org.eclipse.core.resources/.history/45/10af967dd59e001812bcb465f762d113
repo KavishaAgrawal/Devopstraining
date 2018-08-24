@@ -1,0 +1,11 @@
+package com.annotation;
+
+public class Mydate {
+@DateAnnotation(day = 13, month = "August", year = 2018)
+public static void display() {
+	System.out.println("display");
+}
+public static void main(String[] args) {
+	
+}
+}

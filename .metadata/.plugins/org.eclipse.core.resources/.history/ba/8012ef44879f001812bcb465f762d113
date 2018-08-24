@@ -1,0 +1,29 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.Reader;
+
+import com.pojos.Employee;
+
+public class TestEmployeeDAO {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       System.out.println("enter employee details: id, salary and name");
+     BufferedReader br=new BufferedReader(new Reader(System.in); 
+		@Override
+		public void close() throws IOException {
+			// TODO Auto-generated method stub
+			
+		}
+	})
+		Employee myEmployee=new Employee(12,12000,"ABC");
+       EmployeeDAO dao = new EmployeeDAO();
+       int rows = dao.addEmployee(myEmployee);
+       if(rows>0) {
+    	   System.out.println("record inserted successfully");
+       }else
+    	   System.out.println("Sorry");
+	}
+
+}

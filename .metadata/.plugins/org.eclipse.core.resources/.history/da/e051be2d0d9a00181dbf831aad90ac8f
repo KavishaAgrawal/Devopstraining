@@ -1,0 +1,26 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class max {
+ public static void main(String[] args) {
+	BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));
+	BufferedReader br2 = new BufferedReader(new InputStreamReader(System.in));
+	try {
+		System.out.println("enter two numbers");
+		int value1 = br1.read();
+		int value2 = br2.read();
+		System.out.println("you entered:"+(char)value1+ "/t" +(char)value2);
+		if(value1>value2) {
+			System.out.println("greater number is"+(char)value1);
+		}
+		else {
+			System.out.println("greater number is"+(char)value2);
+		}
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+}
+}

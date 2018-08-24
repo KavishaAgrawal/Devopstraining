@@ -1,0 +1,22 @@
+
+
+	class MyThread1 extends Thread
+{
+	public void run() {
+		// TODO Auto-generated method stub
+		System.out.println("Thread name: "+Thread.currentThread().getName());
+	}
+	
+	public static void main(String[] args) {
+		Thread thread = MyThread1();
+		thread.setName("my thread");
+		thread.run();
+	}
+
+	private static Thread MyThread1() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}
+
+

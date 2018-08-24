@@ -1,0 +1,16 @@
+
+public class Demo1D {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        int [] numbers;
+        numbers = new int [5];
+        numbers[0]=10;
+        numbers[1]=200;
+        numbers[2]=100;
+        numbers[3]=50;
+        numbers[4]=40;
+        System.out.println("Sum of numbers:-"+numbers[0]+numbers[1]+numbers[2]+numbers[3]+numbers[4]);
+	}
+
+}

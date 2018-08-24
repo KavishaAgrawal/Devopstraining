@@ -1,0 +1,10 @@
+import com.pojo.Employee;
+
+abstract public class EmployeeIO {
+   public static double PI = 3.14;
+   public static String  NAME = "CITY";
+   
+   abstract public Employee readEmployee();
+   abstract public void writeEmployee(Employee employee);
+   
+}

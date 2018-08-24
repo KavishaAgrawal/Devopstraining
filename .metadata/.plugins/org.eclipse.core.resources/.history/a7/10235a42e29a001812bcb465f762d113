@@ -1,0 +1,102 @@
+package com.beans;
+
+import java.util.List;
+import java.util.Scanner;
+
+import com.interfaces.BookIO;
+
+public class Book implements BookIO{
+  private int isbn;
+  private String name;
+  private String publication;
+  private double price;
+  public Book() {
+	  isbn=12;
+	  name = "Core Java";
+	  publication = "My Publication";
+	  price = 123.50d;
+  }
+public Book(int isbn, String name, String publication, double price) {
+	super();
+	this.isbn = isbn;
+	this.name = name;
+	this.publication = publication;
+	this.price = price;
+}
+public int getIsbn() {
+	return isbn;
+}
+public void setIsbn(int isbn) {
+	this.isbn = isbn;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public String getPublication() {
+	return publication;
+}
+public void setPublication(String publication) {
+	this.publication = publication;
+}
+public double getPrice() {
+	return price;
+}
+@Override
+public String toString() {
+	return "Book [isbn=" + isbn + ", name=" + name + ", publication=" + publication + ", price=" + price + "]";
+}
+public void setPrice(double price) {
+	this.price = price;
+}
+  @Override
+  public boolean equals(Object arg0) {
+	  Book b = (Book)arg0;
+	  return this.isbn==b.isbn&&this.name.equals(b.name);
+  }
+@Override
+public Book getBook() {
+	// TODO Auto-generated method stub
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter book id:");
+	int isbn = sc.nextInt();
+	System.out.println("enter name of book:");
+	String name = sc.next();
+	System.out.println("enter publication name:");
+	String publication = sc.next();
+	System.out.println("enter price of  book");
+	double price = sc.nextDouble();
+	sc.close();
+	return new Book(isbn,name,publication,price);
+}
+@Override
+public void printBook(List<Book> books) {
+	// TODO Auto-generated method stub
+	System.out.println("book details you entered:"+new Book());
+}
+@Override
+public void printBook(Book book) {
+	// TODO Auto-generated method stub
+	
+}
+@Override
+public int hashCode() {
+	return 10;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

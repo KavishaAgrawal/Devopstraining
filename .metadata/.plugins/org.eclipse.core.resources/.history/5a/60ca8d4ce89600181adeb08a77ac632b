@@ -1,0 +1,6 @@
+
+
+public class Snippet {
+	int a = Integer.parseInt(args[0]);
+	
+}
